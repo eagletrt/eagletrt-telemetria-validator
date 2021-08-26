@@ -10,6 +10,7 @@ export const PARSERS: Record<string, CanMessageParser> = {
     PARSE_INVERTERS_TEMPERATURE_MOTORS: msg => ((msg[2] << 8) + msg[1] - 9393.9) / 55.1,
     // (Value/max value) = percentage of torque requested
     PARSE_INVERTERS_TORQUE: msg => zweiComplement((msg[2] << 256) + msg[1]) / 32767.0,
+    PARSE_INVERTERS_F_ACT_CURRENT: msg => ((msg[2] << 8) + msg[1]),
 
     /* BMS_HV */
     PARSE_BMS_HV_VOLTAGE: msg => ({

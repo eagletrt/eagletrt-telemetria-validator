@@ -24,6 +24,12 @@
                 "id": "0x181",
                 "fb": "0xA0",
                 "parser": "PARSE_INVERTERS_TORQUE"
+            },
+            "filtered_actual_current": {
+                "type": "can",
+                "id": "0x181",
+                "fb": "0x5F",
+                "parser": "PARSE_INVERTERS_F_ACT_CURRENT"
             }
         },
         "left": {
@@ -50,6 +56,12 @@
                 "id": "0x182",
                 "fb": "0xA0",
                 "parser": "PARSE_INVERTERS_TORQUE"
+            },
+            "filtered_actual_current": {
+                "type": "can",
+                "id": "0x182",
+                "fb": "0x5F",
+                "parser": "PARSE_INVERTERS_F_ACT_CURRENT"
             }
         }
     },
